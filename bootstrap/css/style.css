@@ -1,0 +1,27 @@
+:root{
+		--dark-blue: #0c2d48;
+		--midnight-blue: #145da0;
+		--blue: #2e8bc0;
+		--baby-blue: #b1d4e0;
+}
+
+body {
+	background-color: var(--dark-blue);
+}
+
+.nav-image{
+	border-radius: 60%;
+}
+
+.navbar {
+	background-color: var(--baby-blue) !important;
+	box-shadow: 0px 5px 5px cyan;
+}
+
+.quem-somos{
+	background-color: var(--blue);
+}
+
+.margin{
+	padding-top: 30px;
+}
