@@ -98,3 +98,32 @@ footer p{
     color: var(--forest-green);
 }
 
+.spacing{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-size{
+    width: 30px;
+}
+
+.btn-round{
+    border-radius: 50%;
+}
+
+#toast-img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.toast-header{
+    background-color: var(--lint1);
+    color: var(--forest-green);
+}
+
+#liveToast{
+    background-color: var(--lint2);
+    color: var(--forest-green);
+}
+
