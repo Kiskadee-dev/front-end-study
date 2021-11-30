@@ -4,20 +4,11 @@ function calc(a, b){
         return
     }
 
-    let comparacao = "não são";
-    if (a === b){
-        comparacao = "são";
-    }
+    let comparacao = a===b ? "são" : "não são";
 
-    let maiorOuMenorQue10 = "menor";
-    if (a+b > 10) {
-        maiorOuMenorQue10 = "maior";
-    }
+    let maiorOuMenorQue10 = a+b > 10 ? "maior" : "menor";
 
-    let maiorOuMenorQue20 = "menor";
-    if(a+b > 20) {
-        maiorOuMenorQue20 = "maior"
-    }
+    let maiorOuMenorQue20 = a+b > 20 ? "maior" : "menor";
 
     console.log(`Os números ${a} e ${b} ${comparacao} iguais. Sua soma é ${a+b}, que é ${maiorOuMenorQue10} que 10 e ${maiorOuMenorQue20} que 20.`);
 };
