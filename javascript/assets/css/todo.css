@@ -117,4 +117,32 @@ footer p {
   color: #013a20;
 }
 
-/*# sourceMappingURL=style.css.map */
+button {
+  color: #bacc81;
+  background-color: #013a20;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}
+
+#task-container {
+  width: 320px;
+  min-height: 320px;
+  background-color: #013a20;
+  border-radius: 30px;
+}
+
+footer {
+  margin-top: 60px;
+  background-color: #bacc81;
+}
+footer a {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=todo.css.map */

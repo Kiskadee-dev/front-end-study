@@ -1,0 +1,131 @@
+$forest-green:#013a20;
+$emerald-green:#478c5c;
+$lint:#bacc81;
+$lint2:#cdd193;
+
+$impact-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$segoe-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+.big-font{
+    font-size: 64px;
+}
+
+body {
+    background-color: $emerald-green;
+    font-family: $impact-font-family;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.margin {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    display: flex !important;
+    justify-content: right !important;
+
+    background-color: $lint;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar ul{
+    margin: auto;
+}
+
+.navbar ul li {
+    padding-right: 30px;
+}
+
+.centered-margin {
+    margin: auto;
+}
+
+.card{
+    background-color: $forest-green;
+}
+
+p.pub-date {
+    font-size: 10px;
+    font-family: $segoe-font-family;
+}
+
+.card-body .card-text{
+    font-family: $segoe-font-family;
+    font-size: 20px;
+}
+
+
+.content {
+    font-family: $segoe-font-family;
+    font-size: 20px;
+}
+
+#about {
+    background-color: $forest-green;
+}
+
+#privacy {
+    color: $forest-green;
+    background-color: $lint;
+}
+#privacy p{
+    font-family: cursive;
+    font-size: 20px;
+}
+
+img {
+    object-fit: cover;
+    height: 250px;
+}
+
+footer p{
+    color: $forest-green;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.btn {
+    background-color: $forest-green;
+    color: $emerald-green;
+}
+
+.btn:hover {
+    background-color: $lint2;
+    color: $forest-green;
+}
+
+.spacing{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-size{
+    width: 30px;
+}
+
+.btn-round{
+    border-radius: 50%;
+}
+
+#toast-img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+
+.toast-header{
+    background-color: var(--lint1);
+    color: $forest-green;
+}
+
+#liveToast{
+    background-color: $lint2;
+    color: $forest-green;
+}
+

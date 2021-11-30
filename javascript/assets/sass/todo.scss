@@ -1,0 +1,29 @@
+@use 'style.scss';
+
+button {
+    color: style.$lint;
+    background-color: style.$forest-green;
+}
+
+body {
+    font-family: style.$segoe-font-family;
+}
+
+.completed-task{
+    text-decoration: line-through;
+}
+
+#task-container {
+    width: 320px;
+    min-height: 320px;
+    background-color: style.$forest-green;
+    border-radius: 30px;
+}
+
+footer{
+    margin-top: 60px;
+    background-color: style.$lint;
+    a{
+        margin-bottom: 10px;
+    }
+}

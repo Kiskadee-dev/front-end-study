@@ -117,4 +117,12 @@ footer p {
   color: #013a20;
 }
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  margin-top: 60px;
+  background-color: #bacc81;
+}
+footer a {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=counter.css.map */

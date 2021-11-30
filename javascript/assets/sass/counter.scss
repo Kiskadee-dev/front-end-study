@@ -1,0 +1,9 @@
+@use "style.scss";
+
+footer{
+    margin-top: 60px;
+    background-color: style.$lint;
+    a{
+        margin-bottom: 10px;
+    }
+}
