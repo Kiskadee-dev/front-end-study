@@ -1,6 +1,9 @@
+const StringError = new Error("String inválida");
+StringError.name = "String inválida";
+
 function verificaPalindromo(string){
     if(!string) {
-        return "string inexistente";
+        throw StringError;
     }
 
     let reverso = "";
@@ -13,14 +16,14 @@ function verificaPalindromo(string){
 }
 
 function verificaPalindromoMetodo2(string){
-    if(!string) return "string inexistente";
+    if(!string) throw StringError;
 
     let palindromo = string.split("").reverse().join("") === string;
     return palindromo;
 }
 
 function verificaPalindromoMetodo3(string){
-    if(!string) return "string inexistente";
+    if(!string) throw StringError;
 
     for(let i = 0; i < string.length / 2; i++){
         if(string[i] !== string[string.length - 1 - i]){
@@ -30,14 +33,29 @@ function verificaPalindromoMetodo3(string){
     return true;
 }
 
-console.log(verificaPalindromo(""));
+try{
+    console.log(verificaPalindromo(""));
+} catch(e){
+    console.log(e);
+}
+
 console.log(verificaPalindromo("ovo"));
 console.log(verificaPalindromo("curioso"));
 console.log("---------------");
-console.log(verificaPalindromoMetodo2(""));
+try{
+    console.log(verificaPalindromoMetodo2(""));
+} catch (e){
+    console.log(e);
+}
 console.log(verificaPalindromoMetodo2("ovo"));
 console.log(verificaPalindromoMetodo2("curioso"));
 console.log("---------------");
-console.log(verificaPalindromoMetodo3(""));
+
+try{
+    console.log(verificaPalindromoMetodo3(""));
+} catch(e) {
+    console.log(e);
+}
+
 console.log(verificaPalindromoMetodo3("ovo"));
 console.log(verificaPalindromoMetodo3("curioso"));
