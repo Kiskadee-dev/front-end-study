@@ -1,0 +1,22 @@
+.big-font {
+  font-size: 64px;
+}
+
+body {
+  background-color: #478c5c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.margin {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.centered-margin {
+  margin: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

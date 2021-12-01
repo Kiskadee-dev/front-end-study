@@ -1,0 +1,31 @@
+$forest-green:#013a20;
+$emerald-green:#478c5c;
+$lint:#bacc81;
+$lint2:#cdd193;
+
+$impact-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+$segoe-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+.big-font{
+    font-size: 64px;
+}
+
+body {
+    background-color: $emerald-green;
+    font-family: $segoe-font-family;
+    color: white;
+
+    margin: 0;
+    padding: 0;
+}
+
+.margin {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.centered-margin {
+    margin: auto;
+}
+

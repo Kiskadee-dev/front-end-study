@@ -1,0 +1,25 @@
+@use "style.scss";
+
+#cat-images {
+    margin: auto;
+    min-height: 300px;
+    max-width: 300px;
+    background-color: style.$forest-green;
+    border-radius: 20px;
+
+    img {
+        max-width: 300px;
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
+
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: style.$forest-green;
+    color: style.$lint;
+    border-color: style.$lint;
+    border-radius: 20px;
+}

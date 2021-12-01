@@ -1,0 +1,44 @@
+.big-font {
+  font-size: 64px;
+}
+
+body {
+  background-color: #478c5c;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.margin {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.centered-margin {
+  margin: auto;
+}
+
+#cat-images {
+  margin: auto;
+  min-height: 300px;
+  max-width: 300px;
+  background-color: #013a20;
+  border-radius: 20px;
+}
+#cat-images img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #013a20;
+  color: #bacc81;
+  border-color: #bacc81;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=catApiStyle.css.map */
