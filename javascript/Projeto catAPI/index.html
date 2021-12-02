@@ -15,7 +15,13 @@
         <div id="cat-images" class="d-flex margin justify-content-center align-items-center">
             <img id="cat-pic" href="" alt="cat-picture">
         </div>
-        <button id="changeCatPicture">Change cat picture!</button>
+        <button id="changeCatPicture" class="btn btn-primary">
+            <span>Change cat picture!</span>
+        </button>
+        <button id="loadingButton" class="btn btn-primary" type="button" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            Changing...
+        </button>
     </div>
 </body>
 <script src="assets/js/cats.js"></script>

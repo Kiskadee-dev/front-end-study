@@ -35,7 +35,7 @@ body {
 button {
   margin-top: 20px;
   margin-bottom: 20px;
-  background-color: #013a20;
+  background-color: #013a20 !important;
   color: #bacc81;
   border-color: #bacc81;
   border-radius: 20px;

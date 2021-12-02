@@ -18,7 +18,7 @@
 button {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: style.$forest-green;
+    background-color: style.$forest-green !important;
     color: style.$lint;
     border-color: style.$lint;
     border-radius: 20px;
