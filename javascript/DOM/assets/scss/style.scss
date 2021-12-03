@@ -1,0 +1,82 @@
+$day-mode-color: white;
+$dark-mode-color: black;
+$segoe-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+@mixin margin {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@mixin center {
+    margin: auto;
+}
+
+
+
+html {
+    height: 90%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: $segoe-font-family;
+    height: 90%;
+    background-color: #7EC8E3;
+}
+
+.margin {
+    @include margin;
+}
+
+.center {
+    @include center;
+}
+
+#container {
+    @include center;
+    margin-top: 100px;
+    width: 50%;
+    max-height: 100%;
+    height: 100vh;
+    display: flex;
+
+    background-color: #000C66;
+    border-radius: 20px;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    section{
+        @include margin;
+        
+    }
+    button{
+        height: 50px;
+        border-radius: 20px;
+    }
+
+}
+
+@mixin dark-mode($mode: true) {
+    @if $mode{
+        background-color: $dark-mode-color;
+        color: white;
+    } @else {
+        background-color: #050A30 !important;
+    }
+}
+
+.dark-mode{
+    @include dark-mode();
+}
+
+.dark-mode-gray{
+    @include dark-mode(false);
+}
+
+#page-title {
+    background-color: unset;
+}
