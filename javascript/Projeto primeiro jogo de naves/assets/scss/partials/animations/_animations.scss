@@ -1,0 +1,12 @@
+// Player e inimigo 1
+@mixin prorietary-plays($keyframes: play, $time: .5s, $steps: 2){
+    -webkit-animation: $keyframes $time steps($steps) infinite;
+    -moz-animation: $keyframes $time steps($steps) infinite;
+    -ms-animation: $keyframes $time steps($steps) infinite;
+    -o-animation: $keyframes $time steps($steps) infinite;
+}
+
+
+
+
+ 

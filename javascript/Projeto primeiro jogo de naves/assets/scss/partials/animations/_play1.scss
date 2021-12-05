@@ -1,0 +1,24 @@
+@keyframes play {
+	from {background-position:0px;}
+	to {background-position:-512px;}
+}
+
+@-webkit-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+ }
+ 
+ @-moz-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+ }
+ 
+ @-ms-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+ }
+ 
+ @-o-keyframes play {
+    from { background-position:0px; }
+      to { background-position: -512px; }
+ }

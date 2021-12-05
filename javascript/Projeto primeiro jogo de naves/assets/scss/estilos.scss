@@ -1,9 +1,12 @@
-@use "partials/animations";
+@use "partials/animations/animations";
+@use "partials/animations/play1";
+@use "partials/animations/play2";
+@use "partials/animations/play3";
 @use "partials/player";
 @use "partials/inimigo1";
 @use "partials/inimigo2";
 @use "partials/amigo";
-
+@use "partials/explosao";
 
 @font-face {
 	font-family:Titulo;
