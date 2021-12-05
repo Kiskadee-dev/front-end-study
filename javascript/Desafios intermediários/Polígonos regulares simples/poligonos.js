@@ -5,4 +5,4 @@ const A = parseInt(line[0]);
 const B = parseInt(line[1]);
 
 
-console.log(A*B === 1000000000);
+console.log(A*B);
