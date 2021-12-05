@@ -5,25 +5,33 @@ inicio.addEventListener('click', start);
 function start() { // Inicio da função start()
 
 	$("#inicio").hide();
-	
+
+    $("#fundoGame").append("<div id='energia'></div>");
+    $("#fundoGame").append("<div id='placar'></div>");
 	$("#fundoGame").append("<div id='jogador' class='anima1'></div>");
 	$("#fundoGame").append("<div id='inimigo1' class='anima2'></div>");
 	$("#fundoGame").append("<div id='inimigo2'></div>");
 	$("#fundoGame").append("<div id='amigo' class='anima3'></div>");
 
     //Principais variáveis do jogo
-    var fimdejogo=false;
-    var podeAtirar = true;
-    var jogo = {}
+    let fimdejogo=false;
+    let podeAtirar = true;
+    let jogo = {}
 
-    var velocidade = 5;
-    var posicaoY = parseInt(Math.random() * 334);
+    let velocidade = 5;
+    let posicaoY = parseInt(Math.random() * 334);
 
-	var TECLA = {
+    let pontos=0;
+    let salvos=0;
+    let perdidos=0;
+
+    let energiaAtual=3;
+
+	const TECLA = {
         W: 87,
         S: 83,
         D: 68
-        }
+    }
     
     jogo.pressionou = [];
 
@@ -45,6 +53,8 @@ function start() { // Inicio da função start()
         moveinimigo2();
         moveamigo();
         colisao();
+        placar();
+        energia();
     } // Fim da função loop()
 
 
@@ -169,6 +179,7 @@ function start() { // Inicio da função start()
             posicaoY = parseInt(Math.random() * 334);
             $("#inimigo1").css("left",694);
             $("#inimigo1").css("top",posicaoY);
+            energiaAtual--;
         }
 
         // jogador com o inimigo2 
@@ -181,7 +192,7 @@ function start() { // Inicio da função start()
             $("#inimigo2").remove();
                 
             reposicionaInimigo2();
-                
+            energiaAtual--;
         }
 
         // Disparo com o inimigo1
@@ -198,6 +209,8 @@ function start() { // Inicio da função start()
             posicaoY = parseInt(Math.random() * 334);
             $("#inimigo1").css("left",694);
             $("#inimigo1").css("top",posicaoY);
+            pontos=pontos+100;
+            velocidade=velocidade+0.3;
                 
         }
         if (colisao4.length>0) {
@@ -210,7 +223,7 @@ function start() { // Inicio da função start()
             $("#disparo").css("left",950);
             
             reposicionaInimigo2();
-                
+            pontos=pontos+50;                
         }
 
         // jogador com o amigo
@@ -219,6 +232,7 @@ function start() { // Inicio da função start()
                 
             reposicionaAmigo();
             $("#amigo").remove();
+            salvos++;
         }
         
         // Inimigo 2 com amigo
@@ -230,6 +244,7 @@ function start() { // Inicio da função start()
             $("#amigo").remove();
                     
             reposicionaAmigo();
+            perdidos++;
                     
         }
     
@@ -284,6 +299,11 @@ function start() { // Inicio da função start()
         }
     } // Fim da função explosao3
 
+    function placar() {
+	
+        $("#placar").html("<h2> Pontos: " + pontos + " Salvos: " + salvos + " Perdidos: " + perdidos + "</h2>");
+        
+    } //fim da função placar()
 
 	function reposicionaInimigo2() {
 	
@@ -314,8 +334,27 @@ function start() { // Inicio da função start()
         }
     } // Fim da função reposicionaAmigo()
     
+    function energia() {
+	
+        switch(energiaAtual){
+            case 3:
+                $("#energia").css("background-image", "url(assets/imgs/energia3.png)");
+                break;
+            case 2:
+                $("#energia").css("background-image", "url(assets/imgs/energia2.png)");
+                break;
+            case 1:
+                $("#energia").css("background-image", "url(assets/imgs/energia1.png)");
+                break;
+            case 0:
+                $("#energia").css("background-image", "url(assets/imgs/energia0.png)");
+                //Game Over
+                break;
+            default:
+                let err = new Error("Energia em um valor inválido!");
+                throw err;	
+	    } // Fim da função energia()
+    }
 
 
 } // Fim start
-
-///Parei na aula 10, iniciar na 11

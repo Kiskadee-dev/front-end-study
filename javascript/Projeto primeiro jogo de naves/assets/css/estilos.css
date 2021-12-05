@@ -208,6 +208,28 @@
   position: absolute;
 }
 
+#placar {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  left: 5px;
+  top: 590px;
+}
+
+h2 {
+  font-family: Titulo;
+  font-size: 20px;
+  color: #FFF;
+}
+
+#energia {
+  width: 140px;
+  height: 38px;
+  position: absolute;
+  left: 750px;
+  top: 7px;
+}
+
 @font-face {
   font-family: Titulo;
   src: url("../fontes/ANODETONOONE.TTF");
