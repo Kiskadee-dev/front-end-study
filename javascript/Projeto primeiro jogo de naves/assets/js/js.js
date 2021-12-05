@@ -390,3 +390,10 @@ function start() { // Inicio da função start()
     } // Fim da função gameOver();
 
 } // Fim start
+
+function reiniciaJogo() {
+	somGameover.pause();
+	$("#fim").remove();
+	start();
+	
+} //Fim da função reiniciaJogo
