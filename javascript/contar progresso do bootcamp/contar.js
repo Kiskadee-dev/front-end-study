@@ -32,5 +32,5 @@ console.log('Cursos a continuar: ', continuar.length);
 console.log('Desafios completos: ', desafiosCompletos.length);
 console.log('Total de cursos: ', total);
 console.log('Porcentagem concluída: ', function (total) {
-    return ((cursosCompletos.length+desafiosCompletos.length)/total)*100;
+    return (((cursosCompletos.length+desafiosCompletos.length)/total)*100).toFixed(2).toString()+"%";
 }(total));
