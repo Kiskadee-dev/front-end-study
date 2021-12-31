@@ -7,37 +7,29 @@ const Button = styled.button`
   border-radius: 30px;
 `;
 
-class ButtonInc extends React.Component {
-
-  render() {
+function ButtonInc (props) {
     return(
-      <Button id="btn-inc" onClick={this.props.onClick}>+</Button>
+      <Button id="btn-inc" onClick={props.onClick}>+</Button>
     );
   };
-};
 
-class ButtonDec extends React.Component {
-
-  render() {
+  function ButtonDec (props) {
     return(
-      <Button id="btn-dec" onClick={this.props.onClick}>-</Button>
+      <Button id="btn-dec" onClick={props.onClick}>-</Button>
     );
   };
-};
 
 const StyledCounter = styled.h1`
   padding-left: 20px;
   padding-right: 20px;
 `;
 
-class Counter extends React.Component {
+function Counter (props) {
 
-  render() {
-    return (
-      <StyledCounter>{this.props.value}</StyledCounter>
-    );
-  }
-}
+  return (
+    <StyledCounter>{props.value}</StyledCounter>
+  );
+};
 
 class Container extends React.Component {
 
