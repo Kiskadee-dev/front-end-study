@@ -21,12 +21,13 @@ function App() {
 
   const onUpdate = async () => {
     const quote = await getQuote();
+
     if (isMounted.current){
       let promise = audio.play();
       if (promise){
         promise.catch( (e) => console.log(`Audio error: ${e}`));
       };
-      setQuoteState(quote);
+      setQuoteState(quote ? quote : {quote: 'Erro de rede', speaker: 'React'});
     };
   };
 
