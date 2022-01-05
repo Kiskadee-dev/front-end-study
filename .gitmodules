@@ -1,0 +1,6 @@
+[submodule "react/introducao-aos-react-hooks/naruto-quotes-client"]
+	path = react/introducao-aos-react-hooks/naruto-quotes-client
+	url = git@github.com:celso-henrique/naruto-quotes-client.git
+[submodule "react/introducao-aos-react-hooks/naruto-quotes-server"]
+	path = react/introducao-aos-react-hooks/naruto-quotes-server
+	url = git@github.com:celso-henrique/naruto-quotes-server.git
