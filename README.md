@@ -7,9 +7,9 @@ My studies related to front-end using:
  - [x] scss
  - [x] bootstrap
  - [x] JavaScript vanilla
- - [ ] React
+ - [x] React
  - [ ] Flux
- - [ ] Redux
- - [ ] Styled-components 
+ - [x] Redux
+ - [x] Styled-components 
 
 Will add more technologies as I learn.
